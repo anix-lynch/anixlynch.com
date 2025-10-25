@@ -1,0 +1,65 @@
+---
+export interface ProjectCardProps {
+  title: string;
+  description: string;
+  image?: string;
+  placeholder?: {
+    icon: string;
+    title: string;
+    subtitle: string;
+  };
+  badges: Array<{
+    text: string;
+    variant?: 'default' | 'aws' | 'gcp' | 'azure' | 'python' | 'hf';
+  }>;
+  links: {
+    live?: {
+      url: string;
+      text: string;
+    };
+    code?: {
+      url: string;
+      text: string;
+    };
+  };
+}
+
+const { title, description, image, placeholder, badges, links } = Astro.props;
+---
+
+<article class="card">
+  <div class="card-img">
+    {image ? (
+      <img src={image} alt={title} />
+    ) : placeholder ? (
+      <div class="img-placeholder">
+        <span class="icon">{placeholder.icon}</span>
+        <strong>{placeholder.title}</strong><br>
+        <small>{placeholder.subtitle}</small>
+      </div>
+    ) : (
+      <div class="img-placeholder">
+        <span class="icon">📁</span>
+        <strong>Project Image</strong><br>
+        <small>Add screenshot or demo GIF</small>
+      </div>
+    )}
+  </div>
+  <div class="card-body">
+    <h2 class="card-title">{title}</h2>
+    <p class="card-desc">{description}</p>
+    <div class="badges">
+      {badges.map(badge => (
+        <span class={badge.variant || 'default'}>{badge.text}</span>
+      ))}
+    </div>
+    <div class="btns">
+      {links.live && (
+        <a href={links.live.url} class="live">{links.live.text}</a>
+      )}
+      {links.code && (
+        <a href={links.code.url} class="code">{links.code.text}</a>
+      )}
+    </div>
+  </div>
+</article>

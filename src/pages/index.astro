@@ -1,0 +1,157 @@
+---
+import Layout from '../components/Layout.astro';
+import Sidebar from '../components/Sidebar.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+
+// Portfolio data - easily customizable
+const portfolioData = {
+  personal: {
+    name: "Anix Lynch",
+    tagline: "Data Scientist · ML Engineer\nLos Angeles, CA",
+    avatar: "👨‍💻", // or URL to image
+    about: "Data scientist with multi-cloud experience. Specialized in machine learning, data visualization, and deploying scalable ML solutions across AWS, GCP, and Azure.",
+    skills: ["Python", "Machine Learning", "AWS", "GCP", "Azure", "Tableau", "SQL", "Docker", "Kubernetes"],
+    social: {
+      linkedin: "https://www.linkedin.com/in/anixlynch/",
+      github: "https://github.com/anix-lynch", 
+      email: "anixlynch@gmail.com",
+      resume: "/resume.pdf",
+      twitter: "https://x.com/anixlynch",
+      website: "https://anixlynch.com",
+      portfolio: "https://gozeroshot.dev",
+      huggingface: "https://huggingface.co/anixlynch",
+      kaggle: "https://www.kaggle.com/anixlynch",
+      medium: "https://medium.com/@anixlynch"
+    }
+  },
+  projects: [
+    {
+      title: "ML Fraud Detection Pipeline",
+      description: "End-to-end machine learning pipeline on AWS SageMaker with Lambda functions, achieving 95% precision for real-time fraud detection.",
+      placeholder: {
+        icon: "🛡️",
+        title: "AWS Demo", 
+        subtitle: "Replace with GIF/screenshot"
+      },
+      badges: [
+        { text: "AWS", variant: "aws" },
+        { text: "Python", variant: "python" },
+        { text: "SageMaker" },
+        { text: "Lambda" }
+      ],
+      links: {
+        live: { url: "#", text: "🚀 Live Demo" },
+        code: { url: "#", text: "💻 Code" }
+      }
+    },
+    {
+      title: "Real-time Analytics Platform",
+      description: "BigQuery-powered analytics dashboard with Vertex AI predictions and real-time data streaming for business intelligence insights.",
+      placeholder: {
+        icon: "📊",
+        title: "GCP Analytics",
+        subtitle: "Replace with GIF/screenshot"
+      },
+      badges: [
+        { text: "GCP", variant: "gcp" },
+        { text: "Python", variant: "python" },
+        { text: "BigQuery" },
+        { text: "Vertex AI" }
+      ],
+      links: {
+        live: { url: "#", text: "🚀 Live Demo" },
+        code: { url: "#", text: "💻 Code" }
+      }
+    },
+    {
+      title: "MLOps Automation Suite", 
+      description: "Complete MLOps pipeline with Azure Machine Learning, automated model deployment, monitoring, and A/B testing capabilities.",
+      placeholder: {
+        icon: "⚡",
+        title: "Azure MLOps",
+        subtitle: "Replace with GIF/screenshot"
+      },
+      badges: [
+        { text: "Azure", variant: "azure" },
+        { text: "Python", variant: "python" },
+        { text: "Azure ML" },
+        { text: "DevOps" }
+      ],
+      links: {
+        live: { url: "#", text: "🚀 Live Demo" },
+        code: { url: "#", text: "💻 Code" }
+      }
+    },
+    {
+      title: "AI Text Analyzer",
+      description: "Interactive NLP application using transformer models for sentiment analysis, entity recognition, and text summarization.",
+      placeholder: {
+        icon: "🤗",
+        title: "HF Space",
+        subtitle: "Replace with GIF/screenshot"
+      },
+      badges: [
+        { text: "Hugging Face", variant: "hf" },
+        { text: "Python", variant: "python" },
+        { text: "Streamlit" },
+        { text: "Transformers" }
+      ],
+      links: {
+        live: { url: "#", text: "🤗 HF Space" },
+        code: { url: "#", text: "💻 Code" }
+      }
+    },
+    {
+      title: "Business Intelligence Dashboard",
+      description: "Interactive Tableau dashboard analyzing sales performance, customer behavior, and market trends with dynamic filtering.",
+      placeholder: {
+        icon: "📈",
+        title: "Tableau Dashboard",
+        subtitle: "Replace with GIF/screenshot"
+      },
+      badges: [
+        { text: "Tableau" },
+        { text: "SQL" },
+        { text: "Excel" },
+        { text: "BI" }
+      ],
+      links: {
+        live: { url: "#", text: "📊 Dashboard" },
+        code: { url: "#", text: "💻 Code" }
+      }
+    },
+    {
+      title: "Job Market Analyzer",
+      description: "Full-stack web application analyzing job market trends with data scraping, ML predictions, and interactive visualizations.",
+      placeholder: {
+        icon: "🚀",
+        title: "Web App Demo",
+        subtitle: "Replace with GIF/screenshot"
+      },
+      badges: [
+        { text: "Python", variant: "python" },
+        { text: "FastAPI" },
+        { text: "React" },
+        { text: "PostgreSQL" }
+      ],
+      links: {
+        live: { url: "#", text: "🚀 Live Demo" },
+        code: { url: "#", text: "💻 Code" }
+      }
+    }
+  ]
+};
+---
+
+<Layout title="Your Name — Portfolio">
+  <Sidebar {...portfolioData.personal} />
+  
+  <main class="main">
+    <h1 style="font-size:2rem;font-weight:700;margin-bottom:1.5rem;">Projects</h1>
+    <section class="projects">
+      {portfolioData.projects.map(project => (
+        <ProjectCard {...project} />
+      ))}
+    </section>
+  </main>
+</Layout>
