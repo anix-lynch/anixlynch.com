@@ -1,0 +1,32 @@
+# Astro Portfolio Requirements
+# This is an Astro (JavaScript/TypeScript) project, not Python
+# For Node.js dependencies, see package.json
+
+# Node.js version requirement
+node>=18.0.0
+
+# Package manager
+npm>=8.0.0
+
+# Main dependencies (from package.json):
+# - astro@^4.0.0
+# - @astrojs/check@^0.3.0  
+# - typescript@^5.0.0
+
+# Development setup:
+# 1. npm install
+# 2. npm run dev
+# 3. npm run build
+# 4. npm run preview
+
+# Deployment:
+# - GitHub Pages (auto-deploy)
+# - Vercel (./vercel-deploy.sh)
+# - Docker (./docker-push.sh)
+
+# Portfolio Features:
+# - Responsive design
+# - Professional social links
+# - CV download functionality
+# - Project showcase cards
+# - TypeScript support
