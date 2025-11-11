@@ -1,0 +1,236 @@
+:root {
+  --main-width: 36rem;
+  --border-gray: #e4e4e4;
+  --border-gray-lighter: #eeecea;
+  --body-text: #2a2a2a;
+  --light-text-gray: #828282;
+  --yellow: #ffee66cc;
+  --red: #ee4422;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Source Sans 3", sans-serif;
+  color: var(--body-text);
+  background-color: #fff;
+  line-height: 1.8em;
+}
+
+a {
+  text-decoration: none;
+  color: var(--body-text);
+  padding-bottom: 0.125ex;
+  border-bottom: 5px solid var(--yellow);
+}
+
+a:hover {
+  color: var(--body-text);
+  background: var(--yellow);
+  border-bottom: 1px solid transparent;
+}
+
+a.external:after {
+  content: "\2197";
+  font-weight: bold;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", "DejaVu Sans", sans-serif;
+  font-size: .8em;
+  color: var(--red);
+  vertical-align: middle;
+  margin-left: 0.2em;
+}
+
+p {
+  color: var(--body-text);
+  line-height: 1.8em;
+  margin: 0 0 1.8em 0;
+  padding: 0;
+}
+
+p strong {
+  font-weight: bold;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Source Code Pro", monospace;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  color: var(--body-text);
+}
+
+h1 {
+  font-size: 1.50em;
+  line-height: 1.166em;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+#header #myname {
+  color: var(--body-text);
+  border: none;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.166em;
+  text-transform: none;
+  font-family: "Source Code Pro", monospace;
+}
+
+#header #myname:hover {
+  background: none;
+  border-bottom: 5px solid var(--yellow);
+}
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  text-transform: none;
+  line-height: 1.166em;
+  font-weight: 300;
+  border: none;
+  margin: 0;
+  padding: 0 0 1em 0;
+}
+
+#all {
+  padding-bottom: 7em;
+}
+
+#header {
+  width: var(--main-width);
+  margin: 3.5em auto 0 auto;
+  text-transform: uppercase;
+}
+
+#header a {
+  padding: 0;
+  line-height: 1.8em;
+}
+
+#headercard p {
+  margin: 0;
+  padding: 0;
+  line-height: 2.3;
+}
+
+#maincontents {
+  position: relative;
+  top: 0;
+  margin: -0.5em auto 0 auto;
+  padding: 3.5em 0 0 0;
+  margin: 0 auto;
+  width: var(--main-width);
+}
+
+.section {
+  margin: 0 0 3.5em 0;
+  padding: 0;
+  clear: both;
+}
+
+.section + .section {
+  margin: 0 0 7em 0;
+  padding: 0;
+  clear: both;
+}
+
+.sectioncontents {
+  padding: 0;
+  margin: 0;
+  clear: both;
+}
+
+#occupation {
+  font-family: "Source Code Pro", monospace;
+  font-weight: 300;
+  line-height: 1.8em;
+  color: var(--light-text-gray);
+}
+
+#occupation p {
+  margin: 0;
+  padding: 0;
+  line-height: 1.8em;
+}
+
+#cvsummary {
+  padding: 0 0 1.8em 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2em;
+}
+
+#biomap {
+  margin: 0;
+  flex: 0 0 auto;
+}
+
+#biomap > svg {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+#biotimeline {
+  margin: 0;
+  flex: 0 1 auto;
+  font-family: "Source Code Pro", monospace;
+  font-weight: 300;
+  font-size: 0.9em;
+}
+
+#biotimeline table {
+  border-collapse: collapse;
+}
+
+#biotimeline td {
+  padding: 0.2em 0.5em;
+  vertical-align: top;
+  line-height: 1.6em;
+}
+
+#biotimeline td:first-child {
+  text-align: center;
+  width: 1.5em;
+  font-size: 1.2em;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0;
+}
+
+td {
+  vertical-align: top;
+  padding: 0.5em;
+}
+
+/* Responsive */
+@media only screen and (max-width: 767px) {
+  #header,
+  #maincontents {
+    width: 100%;
+    padding-left: 2em;
+    padding-right: 2em;
+    box-sizing: border-box;
+  }
+
+  #cvsummary {
+    flex-wrap: wrap;
+  }
+
+  #biotimeline {
+    margin: 1.8em 0 0 0;
+  }
+}
+

@@ -1,0 +1,150 @@
+/* Projects page specific styles */
+
+.project-card {
+  display: flex;
+  gap: 1.5em;
+  margin-bottom: 3em;
+  padding-bottom: 3em;
+  border-bottom: 1px solid var(--border-gray-lighter);
+}
+
+.project-card:last-child {
+  border-bottom: none;
+}
+
+.project-icon {
+  font-size: 3em;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.project-content {
+  flex: 1;
+}
+
+.project-content h3 {
+  font-size: 1.2em;
+  font-weight: 400;
+  margin-bottom: 0.3em;
+  color: var(--body-text);
+}
+
+.project-subtitle {
+  font-family: "Source Code Pro", monospace;
+  font-size: 0.8em;
+  color: var(--light-text-gray);
+  margin: 0 0 1em 0 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.project-content > p {
+  margin-bottom: 1em;
+  line-height: 1.6em;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin-bottom: 1.2em;
+}
+
+.tag {
+  font-family: "Source Code Pro", monospace;
+  font-size: 0.75em;
+  padding: 0.3em 0.8em;
+  border-radius: 3px;
+  font-weight: 400;
+  border: none;
+}
+
+.tag-aws {
+  background-color: #ff990033;
+  color: #ff9900;
+}
+
+.tag-gcp {
+  background-color: #4285f433;
+  color: #4285f4;
+}
+
+.tag-azure {
+  background-color: #0078d433;
+  color: #0078d4;
+}
+
+.tag-python {
+  background-color: #3776ab33;
+  color: #3776ab;
+}
+
+.tag-tool {
+  background-color: #82828233;
+  color: var(--light-text-gray);
+}
+
+.project-links {
+  display: flex;
+  gap: 1em;
+  margin-top: 1em;
+}
+
+.btn-primary,
+.btn-secondary {
+  font-family: "Source Code Pro", monospace;
+  font-size: 0.85em;
+  padding: 0.5em 1.2em;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.btn-primary {
+  background-color: #5b4cff;
+  color: white;
+  border-bottom: none !important;
+}
+
+.btn-primary:hover {
+  background-color: #4a3bdd !important;
+  color: white !important;
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--body-text);
+  border: 1px solid var(--border-gray) !important;
+  border-bottom: 1px solid var(--border-gray) !important;
+}
+
+.btn-secondary:hover {
+  background-color: #f5f5f5 !important;
+  border-color: var(--body-text) !important;
+}
+
+/* Responsive */
+@media only screen and (max-width: 767px) {
+  .project-card {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .project-icon {
+    font-size: 2.5em;
+  }
+
+  .project-links {
+    flex-direction: column;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    text-align: center;
+    width: 100%;
+  }
+}
+
