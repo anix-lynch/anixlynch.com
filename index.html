@@ -4,11 +4,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anix Lynch</title>
+  <meta name="description" content="Anix Lynch - Data Scientist & ML Engineer based in Los Angeles. Passionate about automating stuff and building AI solutions.">
+  <meta name="keywords" content="Data Scientist, ML Engineer, Machine Learning, AI, Python, Los Angeles">
+  <meta name="author" content="Anix Lynch">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph Tags for Social Sharing -->
+  <meta property="og:title" content="Anix Lynch - Data Scientist & ML Engineer">
+  <meta property="og:description" content="Data Scientist & ML Engineer based in Los Angeles. Building AI solutions and automating workflows.">
+  <meta property="og:url" content="https://anixlynch.com">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@anixlynch">
+  
+  <title>Anix Lynch - Data Scientist & ML Engineer | Portfolio</title>
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400|Source+Sans+3&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="css/main.css">
+  
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Anix Lynch",
+    "url": "https://anixlynch.com",
+    "image": "https://anixlynch.com/images/profile.jpg",
+    "sameAs": [
+      "https://linkedin.com/in/anixlynch",
+      "https://github.com/anixlynch",
+      "https://twitter.com/anixlynch",
+      "https://medium.com/@anixlynch",
+      "https://huggingface.co/anixlynch"
+    ],
+    "jobTitle": "Data Scientist & ML Engineer",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Freelance"
+    },
+    "knowsAbout": ["Machine Learning", "Data Science", "Python", "AI", "Automation"],
+    "birthPlace": {
+      "@type": "Place",
+      "name": "Bangkok, Thailand"
+    },
+    "homeLocation": {
+      "@type": "Place",
+      "name": "Los Angeles, CA"
+    }
+  }
+  </script>
 </head>
 
 <body>
@@ -30,11 +84,11 @@
       <div class="section">
         <div class="sectioncontents">
           <div class="social-links">
-            <a href="https://linkedin.com/in/anixlynch" title="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/anixlynch" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://twitter.com/anixlynch" title="Twitter" target="_blank"><i class="fab fa-x-twitter"></i></a>
-            <a href="https://huggingface.co/anixlynch" title="HuggingFace" target="_blank"><i class="fas fa-face-smile"></i></a>
-            <a href="https://medium.com/@anixlynch" title="Medium" target="_blank"><i class="fab fa-medium"></i></a>
+            <a href="https://linkedin.com/in/anixlynch" title="LinkedIn" target="_blank" onclick="gtag('event', 'click', {'event_category': 'social', 'event_label': 'LinkedIn'});"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/anixlynch" title="GitHub" target="_blank" onclick="gtag('event', 'click', {'event_category': 'social', 'event_label': 'GitHub'});"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/anixlynch" title="Twitter" target="_blank" onclick="gtag('event', 'click', {'event_category': 'social', 'event_label': 'Twitter'});"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://huggingface.co/anixlynch" title="HuggingFace" target="_blank" onclick="gtag('event', 'click', {'event_category': 'social', 'event_label': 'HuggingFace'});"><i class="fas fa-face-smile"></i></a>
+            <a href="https://medium.com/@anixlynch" title="Medium" target="_blank" onclick="gtag('event', 'click', {'event_category': 'social', 'event_label': 'Medium'});"><i class="fab fa-medium"></i></a>
           </div>
         </div>
       </div>
@@ -42,7 +96,7 @@
       <div class="section">
         <div style="display: flex; align-items: center; margin-bottom: 1em;">
           <h2 style="padding-bottom: 0; margin-bottom: 0;">TLDR</h2>
-          <a href="gallery.html" class="btn-gallery">Gallery</a>
+          <a href="gallery.html" class="btn-gallery" onclick="gtag('event', 'click', {'event_category': 'navigation', 'event_label': 'Gallery'});">Gallery</a>
         </div>
         <div class="sectioncontents">
           <div id="cvsummary">
