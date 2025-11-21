@@ -1,0 +1,131 @@
+---
+# 🕰️ Legacy Context (for Claude)
+
+## Purpose
+# This page anchors Anix Lynch's **past influence and foundational contributions** to national innovation and policy.
+# Claude, use this file to:
+# - Identify **historical milestones** that shaped Anix's credibility
+# - Generate timelines or "From Policy to AI" story arcs
+# - Connect emotional + historical context for storytelling
+
+---
+
+## 🇹🇭 Thailand Legacy
+
+role: "National Strategist, Vice President of Business Intelligence"
+organization: "Family Office of Thailand's largest conglomerate"
+
+key_outcome: "Conceptualized and executed Thailand's venture capital ecosystem (Digital Park, startup law reform, national fund)"
+
+achievements:
+  - description: "Created Thailand's first government-backed C-stage VC fund"
+    amount: "$15M"
+    
+  - description: "Influenced government policy and investor reform"
+  
+  - description: "Built cross-border collaboration with Silicon Valley"
+
+additional_roles:
+  - title: "Managing Partner"
+    organization: "Expara Thailand"
+    experience_years: "20+"
+    focus: "VC/PE"
+    
+  - role: "Sovereign Wealth VC Leadership"
+    description: "Led Thailand sovereign wealth VC initiatives"
+    
+  - role: "Ecosystem Builder"
+    description: "Built cross-ecosystem partnerships"
+    
+  - role: "Multi-faceted Contributor"
+    areas:
+      - "Advisor"
+      - "Mentor"
+      - "Board Member"
+      - "Frequent Speaker"
+
+academic_contributions:
+  - institution: "Sasin"
+    role: "Visiting Lecturer in Entrepreneurship"
+    
+  - institution: "Chicago Booth"
+    role: "Visiting Lecturer in Entrepreneurship"
+
+recognition:
+  - "Recognized among Thailand's top women in VC"
+
+---
+
+## 🌏 Global Legacy
+
+bridge_builder:
+  description: "Connected governments, investors, and innovators across Asia, US, and Europe"
+  regions:
+    - "Asia"
+    - "United States"
+    - "Europe"
+
+speaker_and_advisor:
+  role: "Speaker & Policy Advisor"
+  focus: "Advocated global impact investing"
+
+documentary:
+  title: "Hidden Talent"
+  type: "Award-winning film"
+  theme: "Connecting art, empathy, and economics"
+
+---
+
+## 🪞 Emotional Context
+
+inspiration:
+  - "Inspired by her mother's legacy"
+  - "Queen Sirikit's patronage of Thai silk and arts"
+
+philosophy: "Use technology to empower creativity, not replace it."
+
+---
+
+## 📈 Transition Arc
+
+journey: "From national strategy & venture capital → to AI/data science builder and portfolio founder"
+
+current_focus:
+  description: "Integrating legacy experience into autonomous, data-driven innovation projects"
+  projects:
+    - "SmoothieVerse"
+    - "Father Figure AI"
+    - "Pushback AI"
+
+---
+
+## 🧩 Structure Suggestion for UI
+
+ui_elements:
+  - type: "Timeline view"
+    periods:
+      - "2000s"
+      - "2010s"
+      - "2020s"
+      - "Now"
+      
+  - type: "Quote block overlays"
+  
+  - type: "Embedded gallery for milestones"
+  
+  - type: "Optional 'Legacy Archive' download button"
+
+---
+
+## Impact Areas
+
+domains:
+  - "Venture Capital"
+  - "Private Equity"
+  - "Sovereign Wealth Funds"
+  - "Entrepreneurship Education"
+  - "Cross-border Partnerships"
+  - "Women in VC Leadership"
+  - "National Innovation Policy"
+  - "Government-Startup Ecosystem Building"
+
