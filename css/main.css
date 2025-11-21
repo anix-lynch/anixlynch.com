@@ -403,3 +403,48 @@ ul li:before {
     padding: 1.5em;
   }
 }
+
+/* ASCII Art Styling */
+pre.ascii-box,
+pre.ascii-badge,
+pre.ascii-flow,
+pre.ascii-map {
+  font-family: "Courier New", "Monaco", monospace;
+  font-size: 0.75em;
+  line-height: 1.4em;
+  color: var(--light-text-gray);
+  background: var(--border-gray-lighter);
+  padding: 1em 1.5em;
+  border-radius: 6px;
+  overflow-x: auto;
+  margin: 1.5em 0;
+  border: 1px solid var(--border-gray);
+}
+
+pre.ascii-box {
+  text-align: center;
+  font-weight: bold;
+  color: var(--red);
+  background: linear-gradient(to bottom, var(--yellow), transparent);
+}
+
+pre.ascii-badge {
+  text-align: center;
+  color: var(--body-text);
+}
+
+pre.ascii-flow,
+pre.ascii-map {
+  color: var(--body-text);
+}
+
+@media only screen and (max-width: 767px) {
+  pre.ascii-box,
+  pre.ascii-badge,
+  pre.ascii-flow,
+  pre.ascii-map {
+    font-size: 0.6em;
+    padding: 0.8em;
+    overflow-x: scroll;
+  }
+}
