@@ -94,10 +94,19 @@ h2 {
   font-size: 1.5em;
   text-transform: none;
   line-height: 1.166em;
-  font-weight: 300;
+  font-weight: 400;
   border: none;
   margin: 0;
   padding: 0 0 1em 0;
+}
+
+h3 {
+  font-size: 1.1em;
+  font-weight: 400;
+  color: var(--body-text);
+  margin: 1.5em 0 0.8em 0;
+  padding: 0;
+  line-height: 1.4em;
 }
 
 #all {
@@ -343,5 +352,50 @@ td {
     width: 2.2em;
     height: 2.2em;
     font-size: 1em;
+  }
+}
+
+/* Content List Styling */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5em 0;
+}
+
+ul li {
+  position: relative;
+  padding-left: 1.5em;
+  margin-bottom: 0.8em;
+  line-height: 1.8em;
+}
+
+ul li:before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--red);
+  font-weight: bold;
+}
+
+/* Highlight Box for Key Stats */
+.highlight-stat {
+  display: inline-block;
+  background: linear-gradient(to bottom, transparent 50%, var(--yellow) 50%);
+  padding: 0 0.2em;
+  font-weight: bold;
+}
+
+/* Section with subtle background */
+.section-highlight {
+  background: linear-gradient(to right, var(--border-gray-lighter) 0%, transparent 100%);
+  padding: 2em;
+  margin: 2em -2em;
+  border-radius: 8px;
+}
+
+@media only screen and (max-width: 767px) {
+  .section-highlight {
+    margin: 2em 0;
+    padding: 1.5em;
   }
 }
